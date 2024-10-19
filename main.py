@@ -40,8 +40,8 @@ for article_tag in article_tags:
     artile_list.append(
         {
             'pub_date': pub_date,
-            'href': urljoin(base_url,href),
             'title': title,
+            'href': urljoin(base_url, href),
         }
     )
 
@@ -61,7 +61,8 @@ while len(artile_list) > 0:
 
 
 
-print(len(result_list))
+for el in result_list:
+    print(el)
 
 
 
